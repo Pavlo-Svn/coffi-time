@@ -1,0 +1,110 @@
+.explore {
+    position: relative;
+    &::before {
+        display: block;
+        background-image: url(../img/bg-cup1.png);
+        background-repeat: no-repeat;
+        background-size:auto;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: -webkit-fill-available;
+        left: 0px;
+        top: 40px;
+        z-index: -1 ;
+    }
+}
+
+.explore__container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    z-index: 2;
+    
+}
+@media (max-width:1000px){
+    .explore__container{
+        padding-top: 80px; 
+        padding-bottom: 50px;
+    }
+}
+.explore__title {
+    text-align: center;
+}
+
+.title {}
+
+.explore__subtitle {
+    text-align: center;
+}
+
+.subtitle {}
+
+.explore__menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.explore__menu-item {
+    background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: (0px 30px 60px rgba(163, 168, 179, 0.15));
+    border-radius: 24px;
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 38px;
+}
+
+.explore__menu-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    color: #1B1B1D;
+}
+
+.explore__menu-subtitle {
+    font-size: 24px;
+    line-height: 35px;
+    color: #64646A;
+}
+
+.explore__menu-img {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.explore__menu-button {
+    padding: 15px 30px;
+    background: #1B1B1D;
+    border-radius: 126px;
+
+    a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    transition: 0.1s linear;
+
+    &:hover {
+        background: gray;
+    }
+}
+
+
+@media (max-width:400px) {
+    .explore__menu-button a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}

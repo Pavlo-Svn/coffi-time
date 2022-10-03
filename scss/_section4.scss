@@ -1,0 +1,152 @@
+.best {
+    position: relative;
+
+    &::after {
+        background-image: url(../img/bg-cup2.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        content: '';
+        position: absolute;
+        width: 259px;
+        height: -webkit-fill-available;
+        right: 0px;
+        top: 40px;
+        z-index: -1;
+    }
+}
+
+.best__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+@media (max-width:1000px){
+    .best__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+.best__title {
+    text-align: center;
+}
+
+.title {}
+
+.best__subtitle {
+    text-align: center;
+}
+
+.subtitle {}
+
+.best__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-top: 200px;
+    justify-content: center;
+}
+
+.best__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: (0px 20px 60px rgba(163, 168, 179, 0.15));
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    max-width: 393px;
+    padding: 40px 30px 35px;
+}
+
+.best__item-img {
+    position: absolute;
+    top: -106px;
+    left: -12px;
+    width: 50%;
+}
+
+.best__name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50%;
+
+}
+
+.best__item-selling {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #64646A;
+    padding-left: 50%;
+}
+
+.best__item-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    color: #1B1B1D;
+    padding-left: 50%;
+}
+
+.best__item-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: #64646A;
+    padding-top: 87px;
+    padding-bottom: 40px;
+}
+
+.best__order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order__best {}
+
+.order__price {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #1B1B1D;
+}
+
+.order__button {}
+
+.button {}
+
+@media (max-width:1306px) {
+    .best__item:last-child {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:992px) {
+    .best__items {
+        padding-top: 25px;
+    }
+
+    .best__item {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:500px) {
+    .best__item-selling {
+        font-size: 17px;
+        padding-left: 61%;
+    }
+
+    .best__item-title {
+        font-size: 27px;
+        line-height: 34px;
+        padding-left: 61%;
+    }
+
+    .order__button {
+        padding: 5px 12px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
